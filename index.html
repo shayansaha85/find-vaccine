@@ -14,13 +14,17 @@
         #author {
             font-size: 15px;
         }
+        #notAv {
+            font-size: 25px;
+            color: rgb(192,22,6);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <br>
 
-        <h3 id="mainHeading">Find Vaccination Centers With PIN code</h3>
+        <h4 id="mainHeading">Find Vaccination Centers With PIN code</h4>
         <p id="author">Made by Shayan</p>
         <br>
         <br>
@@ -28,11 +32,11 @@
         <form onsubmit="return false">
             <div class="form-group">
               <label for="exampleInputEmail1">PIN Code</label>
-              <input type="text" class="form-control" id="pin" placeholder="e.g. 799001">
+              <input type="text" class="form-control" id="pin" placeholder="e.g. 799001" required>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Date (in DD-MM-YYYY format)</label>
-              <input type="text" class="form-control" id="date" placeholder="e.g. 31-05-2021">
+              <input type="text" class="form-control" id="date" placeholder="e.g. 31-05-2021" required>
             </div>
             <button type="submit" class="btn btn-primary btn-lg" id="findVac">Find Vaccine Center</button>
           </form>
