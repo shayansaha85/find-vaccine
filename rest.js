@@ -46,7 +46,7 @@ for(var i=0;i<n;i++) {
         document.querySelector("#notAv").innerHTML = ""
     } else {
         document.querySelector("#data").innerHTML = ""
-        document.querySelector("#notAv").innerHTML = "Vaccine not available"
+        document.querySelector("#notAv").innerHTML = "No vaccination centers are available"
     }
     
 
