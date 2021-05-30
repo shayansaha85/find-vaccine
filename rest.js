@@ -46,8 +46,8 @@ for(var i=0;i<n;i++) {
         document.querySelector("#notAv").innerHTML = ""
     } else {
         document.querySelector("#data").innerHTML = ""
-        // document.querySelector("#notAv").innerHTML = "No vaccination centers are available"
         alert("Vaccination centres not availabe")
+        document.querySelector("#notAv").innerHTML = "No vaccination centers are available"
     }
 })
 .catch(error => console.log('error', error));
