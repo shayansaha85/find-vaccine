@@ -2,7 +2,8 @@ let button = document.querySelector("#findVac");
 
 let outputString = "";
 
-button.addEventListener('click', ()=> {
+button.addEventListener('click', ()=>   {
+outputString = ""
 let pin = document.querySelector("#pin").value;
 let ans = document.getElementById("date").value
 let date = ""
