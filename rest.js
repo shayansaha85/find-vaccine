@@ -4,9 +4,19 @@ let outputString = "";
 
 button.addEventListener('click', ()=> {
 let pin = document.querySelector("#pin").value;
-let date = document.querySelector("#date").value;
+let ans = document.getElementById("date").value
+let date = ""
+let dateEls = ans.split('-')
+let length = dateEls.length
+let i=length-1
+while(i>=0) {
+    date+=dateEls[i]+"-";
+    i--;
+}
+date = date.substring(0, date.length-1)
+
 let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=" + pin + "&date= " + date;
-https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=799001&date=31-05-2021"
+
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
