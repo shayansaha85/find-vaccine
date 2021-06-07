@@ -39,7 +39,7 @@ console.log(n)
 let count=0;
 
 for(var i=0;i<n;i++) {
-    if(jsonOP["sessions"][i]["available_capacity"] != 0) {
+    if(2==2) {
         outputString += "<b>Name of centre : </b>" + jsonOP["sessions"][i]["name"]+"<br>"+
         "<b>Address : </b>" + jsonOP["sessions"][i]["address"]+"<br>"+
         "<b>DOSE 1 capacity : </b>" + jsonOP["sessions"][i]["available_capacity_dose1"]+"<br>"+
@@ -58,7 +58,7 @@ for(var i=0;i<n;i++) {
     } else {
         document.querySelector("#data").innerHTML = ""
         alert("Vaccination centres not availabe")
-        document.querySelector("#notAv").innerHTML = "No vaccination centers are available"
+        document.querySelector("#notAv").innerHTML = "No vaccination centres are available"
     }
 })
 .catch(error => console.log('error', error));
