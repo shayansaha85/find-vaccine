@@ -39,7 +39,7 @@ console.log(n)
 let count=0;
 
 for(var i=0;i<n;i++) {
-    if(2==2) {
+    if(jsonOP["sessions"][i]["available_capacity"]!=0) {
         outputString += "<b>Name of centre : </b>" + jsonOP["sessions"][i]["name"]+"<br>"+
         "<b>Address : </b>" + jsonOP["sessions"][i]["address"]+"<br>"+
         "<b>DOSE 1 capacity : </b>" + jsonOP["sessions"][i]["available_capacity_dose1"]+"<br>"+
